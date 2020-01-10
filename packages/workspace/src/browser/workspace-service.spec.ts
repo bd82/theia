@@ -55,8 +55,8 @@ const getFormattedJson = (data: string): string => {
     return jsoncparser.applyEdits(data, edits);
 };
 
-// tslint:disable:no-any
-// tslint:disable:no-unused-expression
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable no-unused-expressions */
 describe('WorkspaceService', () => {
     const toRestore: Array<sinon.SinonStub | sinon.SinonSpy | sinon.SinonMock> = [];
     const toDispose: Disposable[] = [];

@@ -39,7 +39,7 @@ before(() => {
     testContainer.bind(ILogger).to(MockLogger);
     testContainer.bind(StorageService).to(LocalStorageService).inSingletonScope();
     testContainer.bind(LocalStorageService).toSelf().inSingletonScope();
-    // tslint:disable-next-line:no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     testContainer.bind(FileSystemWatcher).toConstantValue({
         onFilesChanged: Event.None
     } as FileSystemWatcher);

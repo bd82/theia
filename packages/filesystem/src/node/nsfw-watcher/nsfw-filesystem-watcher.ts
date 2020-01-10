@@ -31,7 +31,7 @@ import { setInterval, clearInterval } from 'timers';
 
 const debounce = require('lodash.debounce');
 
-// tslint:disable:no-any
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export interface WatcherOptions {
     ignored: IMinimatch[]

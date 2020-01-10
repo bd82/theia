@@ -19,7 +19,7 @@ import { isObject } from '../../common/types';
 import cloneDeep = require('lodash.clonedeep');
 import URI from 'vscode-uri';
 
-/* tslint:disable:no-any */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export class Configuration {
 

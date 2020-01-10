@@ -95,7 +95,7 @@ export class MonacoEditorZoneWidget implements Disposable {
             const widget: monaco.editor.IOverlayWidget = {
                 getId: () => 'editor-zone-widget-' + id,
                 getDomNode: () => this.zoneNode,
-                // tslint:disable-next-line:no-null-keyword
+                // eslint-disable-next-line no-null/no-null
                 getPosition: () => null!
             };
             this.editor.addOverlayWidget(widget);

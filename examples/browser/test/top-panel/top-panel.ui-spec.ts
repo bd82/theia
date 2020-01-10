@@ -14,7 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-/* tslint:disable:no-unused-expression*/
+/* eslint-disable no-unused-expressions */
 import { expect } from 'chai';
 import { TopPanel } from './top-panel';
 import { BottomPanel } from '../bottom-panel/bottom-panel';

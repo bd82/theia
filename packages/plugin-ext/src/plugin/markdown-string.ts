@@ -46,7 +46,7 @@ export class MarkdownString {
     }
 }
 
-// tslint:disable-next-line:no-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isMarkdownString(thing: any): thing is IMarkdownString {
     if (thing instanceof MarkdownString) {
         return true;

@@ -70,7 +70,7 @@ export class ScmAmendComponent extends React.Component<ScmAmendComponentProps, S
         if (instance && this.lastCommitHeight === 0) {
             this.lastCommitHeight = instance.getBoundingClientRect().height;
         }
-    }
+    };
 
     constructor(props: ScmAmendComponentProps) {
         super(props);
@@ -230,7 +230,7 @@ export class ScmAmendComponent extends React.Component<ScmAmendComponentProps, S
 
         this.transitionHint = 'amend';
         await this.resetAndSetMessage('HEAD~', 'HEAD');
-    }
+    };
 
     protected unamend = async (): Promise<void> => {
         if (this.state.transition.state !== 'none' && this.transitionHint !== 'none') {
@@ -251,7 +251,7 @@ export class ScmAmendComponent extends React.Component<ScmAmendComponentProps, S
             this.transitionHint = 'unamend';
             await this.resetAndSetMessage(commitToRestore.commit.id, commitToUseForMessage);
         }
-    }
+    };
 
     private async resetAndSetMessage(commitToRestore: string, commitToUseForMessage: string | undefined): Promise<void> {
         const message = commitToUseForMessage

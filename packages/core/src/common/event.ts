@@ -14,7 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-// tslint:disable:no-any
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { Disposable } from './disposable';
 import { MaybePromise } from './types';
@@ -176,8 +176,7 @@ export class Emitter<T = any> {
                 this._callbacks.add(listener, thisArgs);
                 this.checkMaxListeners(this._event.maxListeners);
 
-                let result: Disposable;
-                result = {
+                const result: Disposable = {
                     dispose: () => {
                         result.dispose = Emitter._noop;
                         if (!this._disposed) {
@@ -246,7 +245,7 @@ export class Emitter<T = any> {
 }
 
 export interface WaitUntilEvent {
-    // tslint:disable:no-any
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     /**
      * Allows to pause the event loop until the provided thenable resolved.
      *
@@ -265,7 +264,7 @@ export namespace WaitUntilEvent {
     ): Promise<void> {
         const waitables: Promise<void>[] = [];
         const asyncEvent = Object.assign(event, {
-            // tslint:disable-next-line:no-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             waitUntil: (thenable: Promise<any>) => {
                 if (Object.isFrozen(waitables)) {
                     throw new Error('waitUntil cannot be called asynchronously.');

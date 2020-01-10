@@ -120,7 +120,7 @@ export class DocumentsExtImpl implements DocumentsExt {
         return operations;
     }
 
-    // tslint:disable:no-any
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     protected async fireTextDocumentWillSaveEvent({
         document, reason, fireEvent, accept
     }: {

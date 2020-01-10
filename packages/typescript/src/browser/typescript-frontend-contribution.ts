@@ -140,7 +140,7 @@ export class TypeScriptFrontendContribution implements FrontendApplicationContri
     organizeImports(): void {
         const editor = MonacoEditor.get(this.currentEditor);
         if (editor) {
-            // tslint:disable-next-line:no-any
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const action = editor.getControl().getAction('editor.action.organizeImports') as any;
             // workaround isSupported check
             action._run();
@@ -165,7 +165,7 @@ export class TypeScriptFrontendContribution implements FrontendApplicationContri
         ));
     }
 
-    // tslint:disable-next-line:no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     protected async applyCodeAction(codeAction: tsp.CodeAction): Promise<any> {
         const client = await this.clientContribution.languageClient;
         return client.sendRequest(ExecuteCommandRequest.type, {

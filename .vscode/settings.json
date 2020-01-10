@@ -1,15 +1,27 @@
-// If one would like to add/remove/modify user preferences without modifying the content of the
-// workspace settings file, then one would need to modify the `settings.json` under here:
-// - Windows: %APPDATA%\Code\User\settings.json
-// - Linux: $HOME/.config/Code/User/settings.json
-// - Mac: $HOME/Library/Application Support/Code/User/settings.json
 {
-  "tslint.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
   "editor.formatOnSave": true,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/lib": true,
-    "**/coverage": true
+  "editor.insertSpaces": true,
+  "files.insertFinalNewline": true,
+  "clang-format.language.typescript.enable": false,
+  "editor.rulers": [
+    180
+  ], // ESLint `max-len` rule.
+  "[typescript]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+  },
+  "[javascript]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "lcov.path": [
     "packages/core/coverage/lcov.info",
@@ -34,18 +46,5 @@
       "pattern": "**/*.spec.ts",
       "command": "yarn test:theia"
     }
-  ],
-  "editor.insertSpaces": true,
-  "[typescript]": {
-    "editor.tabSize": 4
-  },
-  "[json]": {
-    "editor.tabSize": 2
-  },
-  "[jsonc]": {
-    "editor.tabSize": 2
-  },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "files.insertFinalNewline": true,
-  "clang-format.language.typescript.enable": false
+  ]
 }

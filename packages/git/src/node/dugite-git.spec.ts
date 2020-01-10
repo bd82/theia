@@ -14,7 +14,6 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-// tslint:disable-next-line:no-implicit-dependencies
 import * as upath from 'upath';
 
 import * as path from 'path';
@@ -28,8 +27,7 @@ import { WorkingDirectoryStatus, Repository, GitUtils, GitFileStatus, GitFileCha
 import { initRepository, createTestRepository } from 'dugite-extra/lib/command/test-helper';
 import { createGit } from './test/binding-helper';
 
-// tslint:disable:no-unused-expression
-// tslint:disable:max-line-length
+/* eslint-disable max-len, no-unused-expressions */
 
 const track = temp.track();
 

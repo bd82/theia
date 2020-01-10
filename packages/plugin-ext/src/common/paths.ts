@@ -67,7 +67,6 @@ export function extname(path: string): string {
 }
 
 export function normalize(path: string, toOSPath?: boolean): string {
-
     if (path === null || path === void 0) {
         return path;
     }
@@ -82,7 +81,7 @@ export function normalize(path: string, toOSPath?: boolean): string {
         return path;
     }
 
-    // tslint:disable-next-line:no-shadowed-variable
+    // eslint-disable-next-line no-shadow
     const sep = wantsBackslash ? '\\' : '/';
     const root = getRoot(path, sep);
 
@@ -132,7 +131,7 @@ function streql(value: string, start: number, end: number, other: string): boole
  * `getRoot('files:///files/path') === files:///`,
  * or `getRoot('\\server\shares\path') === \\server\shares\`
  */
-// tslint:disable-next-line:no-shadowed-variable
+// eslint-disable-next-line no-shadow
 export function getRoot(path: string, sep: string = '/'): string {
 
     if (!path) {
@@ -149,7 +148,7 @@ export function getRoot(path: string, sep: string = '/'): string {
             //               ^^^^^^^^^^^^^^^^^^^
             code = path.charCodeAt(2);
             if (code !== CharCode.Slash && code !== CharCode.Backslash) {
-                // tslint:disable-next-line:no-shadowed-variable
+                // eslint-disable-next-line no-shadow
                 let pos = 3;
                 const start = pos;
                 for (; pos < len; pos++) {
