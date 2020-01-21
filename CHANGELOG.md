@@ -17,6 +17,8 @@ Breaking changes:
 - [core] removed `virtual-widget`. `react-widget` should be used instead [#6885](https://github.com/eclipse-theia/theia/pull/6885)
 - [debug-nodejs] removed the `@theia/debug-nodejs` extension [#6933](https://github.com/eclipse-theia/theia/pull/6933)
   - The extension will no longer be maintained by the project and remains in the Git history for anyone who would like to reference it or maintain it.
+- [editorconfig] removed the `@theia/editorconfig` extension [#6933](https://github.com/eclipse-theia/theia/pull/6933)
+  - The extension will no longer be maintained by the project and remains in the Git history for anyone who would like to reference it or maintain it.
 - [task] renamed method `getStrigifiedTaskSchema()` has been renamed to `getStringifiedTaskSchema()` [#6780](https://github.com/eclipse-theia/theia/pull/6780)
 - [task] renamed method `reorgnizeTasks()` has been renamed to `reorganizeTasks()` [#6780](https://github.com/eclipse-theia/theia/pull/6780)
 - Support VS Code icon and color theming. [#6475](https://github.com/eclipse-theia/theia/pull/6475)
