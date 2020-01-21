@@ -58,9 +58,6 @@
       "@theia/debug/lib/*": [
         "packages/debug/src/*"
       ],
-      "@theia/debug-nodejs/lib/*": [
-        "packages/debug-nodejs/src/*"
-      ],
       "@theia/python/lib/*": [
         "packages/python/src/*"
       ],
