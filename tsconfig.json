@@ -70,9 +70,6 @@
       "@theia/messages/lib/*": [
         "packages/messages/src/*"
       ],
-      "@theia/merge-conflicts/lib/*": [
-        "packages/merge-conflicts/src/*"
-      ],
       "@theia/output/lib/*": [
         "packages/output/src/*"
       ],
@@ -84,7 +81,7 @@
       ],
       "@theia/variable-resolver/lib/*": [
         "packages/variable-resolver/src/*"
-      ],     
+      ],
       "@theia/console/lib/*": [
         "packages/console/src/*"
       ],
